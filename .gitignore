@@ -4,6 +4,11 @@
 install/
 log/
 
+# ROS Bits
+devel/
+build/
+.catkin_workspace
+
 # pixi environments
 .pixi
 *.egg-info

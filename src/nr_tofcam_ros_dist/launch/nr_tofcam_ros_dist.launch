@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="config" default="nr_tofcam_ros_dist_node" />
+
+  <node name="nr_tofcam_dist" pkg="nr_tofcam_ros_dist" type="nr_tofcam_ros_dist_node.py" output="screen" >
+    <rosparam command="load" file="$(find nr_tofcam_ros_dist)/config/$(arg config).yaml" />
+  </node>
+
+</launch>

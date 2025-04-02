@@ -1,0 +1,27 @@
+frequency: 5.0
+frame: 'tofcam'
+ip_address: '192.168.3.95' # '10.10.31.180'
+tcp_port: 50660
+udp_port: 45454
+verbose: False
+## default tofcam settings ##
+p_fliplr: True
+p_camera_modes_modulation_frequency: 2 #[24.0, 12.0, 6.0, 3.0, 1.5, 0.75]
+p_camera_modes_modulation_channel: 0 #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+p_camera_modes_hdr_mode: 2 #[0: off, 1: spatial, 2: temporal]
+p_point_cloud_settings_lens_type: 2 #['Wide Field', 'Narrow Field', 'Standard Field']
+p_integration_time_low: 40 #[0;4000]
+p_integration_time_mid: 400 #[0;4000]
+p_integration_time_high: 2000 #[0;4000]
+p_integration_time_grayscale: 25 #[0;44000]
+p_minimal_amplitude: 100 #[0;1000]
+p_filters_median_filter: False
+p_filters_average_filter: False
+p_filters_edge_filter: False
+p_filters_edge_filter_threshold: 150 #[0;5000]
+p_filters_temporal_filter: False
+p_filters_temporal_filter_threshold: 300 #[0;1000]
+p_filters_temporal_filter_factor: 0.1 #[0.0;1.0]
+p_filters_interference_detection: False
+p_filters_interference_detection_limit: 1000 #[0;1000]
+p_filters_interference_detection_use_last_value: False
