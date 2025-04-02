@@ -8,6 +8,7 @@ log/
 devel/
 build/
 .catkin_workspace
+src/CMakeLists.txt
 
 # pixi environments
 .pixi
