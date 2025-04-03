@@ -1,9 +1,9 @@
-frequency: 5.0
+frequency: 40.0 #5.0
 frame: 'tofcam'
 ip_address: '192.168.3.95' # '10.10.31.180'
 tcp_port: 50660
 udp_port: 45454
-verbose: False
+verbose: True
 ## default tofcam settings ##
 p_fliplr: True
 p_camera_modes_modulation_frequency: 2 #[24.0, 12.0, 6.0, 3.0, 1.5, 0.75]

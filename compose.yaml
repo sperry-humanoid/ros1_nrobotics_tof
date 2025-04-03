@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  ros:
+    build: .
+    network_mode: "host"
+    environment:
+      DISPLAY: $DISPLAY
+      QT_X11_NO_MITSHM: "1"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./work:/work
+    stdin_open: true
