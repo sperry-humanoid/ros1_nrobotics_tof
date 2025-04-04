@@ -6,7 +6,7 @@ ENV DISPLAY=:0
 ENV QT_X11_NO_MITSHM=1
 
 # Install extra required dependencies
-RUN apt update && apt install -y python3-pip python3-tk
+RUN apt update && apt install -y python3-pip python3-tk usbutils
 RUN pip install pyserial
 
 # Create the group and user with the same UID and GID (stops weird permissions on files created in mounted volumes inside the docker)
@@ -18,4 +18,4 @@ USER nrobot
 # Source ROS install
 RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
-ENTRYPOINT ["bash", "-c", "source /opt/ros/noetic/setup.bash && source /work/devel/setup.bash && exec bash"]
+ENTRYPOINT ["bash", "-c", "source /opt/ros/noetic/setup.bash && exec bash"]
