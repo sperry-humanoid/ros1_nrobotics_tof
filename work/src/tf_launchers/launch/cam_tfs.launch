@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <node 
+        pkg="tf2_ros" 
+        type="static_transform_publisher" 
+        name="cubeye_2_nrobot_tf" 
+        output="screen" 
+        args="0 0 0 0 0 0 base pcl"/>
+
+    <node 
+        pkg="tf2_ros" 
+        type="static_transform_publisher" 
+        name="deg_rot_tf" 
+        output="screen" 
+        args="0 0 0 1.57 3.14 1.57 base tofcam"/>
+</launch>
