@@ -39,3 +39,12 @@ Terminal 2
 ```
 roslaunch nr_tofcam_ros_dist rviz.launch
 ```
+
+
+## Prerequisites
+
+May need to do
+
+```
+sudo apt install nvidia-docker2
+```
