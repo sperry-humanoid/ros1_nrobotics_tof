@@ -17,5 +17,6 @@ USER nrobot
 
 # Source ROS install
 RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+RUN echo "source /work/devel/setup.bash" >> ~/.bashrc
 
-ENTRYPOINT ["bash", "-c", "source /opt/ros/noetic/setup.bash && exec bash"]
+ENTRYPOINT [ "bash", "-c", "source /opt/ros/noetic/setup.bash && catkin_make && exec bash" ]
